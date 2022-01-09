@@ -34,3 +34,4 @@ puts "----------"
   last_name: "Virani",
   hourly_rate: 60
 )
+puts Employee.count
