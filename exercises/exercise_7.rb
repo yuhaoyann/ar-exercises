@@ -10,7 +10,8 @@ puts "Exercise 7"
 puts "----------"
 
 puts "input store name \n >>"
-input = $stdin.gets.chomp
+# input = $stdin.gets.chomp
+input = "Brand New Store"
 newstore = Store.create(
   name: "input"
 )
