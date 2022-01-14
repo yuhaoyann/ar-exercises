@@ -9,7 +9,6 @@ class Employee < ActiveRecord::Base
   }
   validates :store_id, presence: true
 
-  private
   before_create do 
     pool = [('a'..'z'), ('A'..'Z'), (0..9)].map(&:to_a).flatten
     random_string = (0...8).map { pool[rand(pool.length)] }.join

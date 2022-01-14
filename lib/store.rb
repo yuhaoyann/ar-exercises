@@ -12,6 +12,13 @@ class Store < ActiveRecord::Base
       errors.add(:womens_apparel, "must carry at least one of the men's or women's apparel")
     end
   end
+  # private
+  #   before_destroy do
+  #     if self.employees.size < 1
+  #       self.destroy
+  #     else
+  #       throw(:abort)
+  #     end
+  #   end
 
 end
-
